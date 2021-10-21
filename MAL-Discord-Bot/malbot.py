@@ -5,6 +5,9 @@ from discord import message
 from discord import embeds
 import os
 from dotenv import load_dotenv
+import sys
+sys.path.insert(0,'/home/reshyurem/.local/lib/python3.9/site-packages/myanimelist')
+import myanimelist as mal
 load_dotenv()
 
 # bot connect
