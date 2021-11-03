@@ -13,7 +13,7 @@ load_dotenv()
 # bot connect
 client = discord.Client()
 # this variable stores id of an output channel, you can have many variables corresponding to different channels
-out_channel = int(os.getenv('TEST'))  # add default out_channel
+out_channel = int(os.getenv('WEEBDOM'))  # add default out_channel
 
 motor_function = [0]
 
@@ -52,7 +52,7 @@ async def on_message(message):
                                 if (message_list[i] == "page"):
                                     if(i < len(message_list) - 1):
                                         i += 1
-                                        page = int(message_list[i]) - 1
+                                        anime_page = int(message_list[i]) - 1
                                 elif (message_list[i] in ["manga", "anime", "character", "person"]):
                                     anime_type = message_list[i]
                                 else:
